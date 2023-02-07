@@ -1,0 +1,97 @@
+
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet"> */
+
+/* Mulish */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+/* font-family: 'Mulish', sans-serif; */
+
+
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet"> */
+
+
+:root{
+    
+    --body-font:'Mulish', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --primary-bg:#fff;
+    --secondary-bg:#f7f7f7;
+    --primary-text-color:#212529;
+    --primary-text-color:#6C757D;
+    --spcial-color:#E24727;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.bg_primary{
+    background-color: var(--primary-bg);
+}
+.bg_secondary{
+    background-color: var(--secondary-bg);
+}
+body{
+    font-family: var(--body-font);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--title-font);
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.5;
+}
+p{
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+h6{
+    font-size: 18px;
+}
+
+
+ul,li{
+    list-style: none;
+}
+a,a:hover,a:active{
+    text-decoration: none;
+}
+
+.py-70{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
