@@ -28,6 +28,7 @@
     --primary-text-color:#212529;
     --primary-text-color:#6C757D;
     --spcial-color:#E24727;
+    --light:#ffffff;
 }
 *{
     margin: 0;
@@ -95,3 +96,126 @@ a,a:hover,a:active{
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+/* hero section */
+#home{
+    display: flex;
+    /* background-image:url(/assets/img/bg.jpg); */
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+   
+
+}
+.next-section{
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%,0%);
+}
+
+.next-section a{
+    color: var(--light);
+    padding: 16px 21px 0 21px;
+    border-top: 2px solid var(--light);
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--light);
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    transition: all .5s ease-in-out;
+}
+.next-section a:hover{
+    color: var(--spcial-color);
+   border-color: var(--spcial-color);
+}
+
+.next-section i{
+    animation: bounce 2s infinite 2s;
+}
+
+@keyframes bounce {
+    
+    0%,100%,20%,50%,80%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-10px);
+
+    }
+    60%{
+        transform: translateY(-5px);
+
+    }
+   
+
+}
+
+.home-content{
+    height:100%;
+}
+
+.home-content .hello{
+    color: var(--light);
+    font-family: var(--title-font);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.home-content .hello span{
+    color: var(--spcial-color);
+}
+
+.home-content .intro h1{
+    color: var(--light);
+    font-size: 62px;
+    
+}
+.home-content .desc{
+    color: #b9b9b9;
+    display: block;
+    max-width: 40%;
+
+}
+
+.hire a{
+    text-transform: uppercase;
+    color: var(--light);
+    font-family: var(--title-font);
+    background-color: var(--spcial-color);
+    font-size: 9px;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    user-select: none;
+    position: relative;
+    transition: all .2s;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+.hire a:hover{
+    background-color: #bb3d23;
+}
+
+.hire a::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--spcial-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 25px;
+    transition: all .5s;
+}
+
+.hire a:hover::after{
+   transform: scaleX(1.4) scaleY(1.3);
+   opacity: 0;
+}
+
+.intro-skill h5{
+    color: var(--light);
+}
+
+/* hero section end */
