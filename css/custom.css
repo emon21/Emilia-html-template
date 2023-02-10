@@ -97,6 +97,79 @@ a,a:hover,a:active{
     padding-bottom: 70px;
 }
 
+
+/* header area start */
+
+.navbar{
+    background: transparent !important;
+    padding-top: 20px;
+    z-index: 50;
+}
+
+.navbar-nav li a{
+    position: relative;
+    color: var(--light);
+    transition: .5s all ease;
+}
+.navbar-nav li a:hover{
+    color: var(--spcial-color);
+}
+
+
+.navbar-nav li{
+    margin-left: 3px;
+    overflow: hidden;
+}
+.navbar-nav li a::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--spcial-color);
+    top: 50%;
+    right: 100%;
+    transform: rotate(-12deg);
+    transition: .5s all ease;
+}
+.navbar-nav li a:hover::before{
+    right: 0;
+}
+
+/* 
+.header ul{}
+.header ul li{
+    margin-top: 10px;
+    border-right: 2px solid red;
+    display: block;
+    background: blue;
+  
+}
+.header ul li a{
+    color: #1b0c0c;
+    font-size: 18px;
+    line-height: 20px;
+      padding: 10px 15px;
+    text-transform: capitalize;
+    display: block;
+    text-align: center;
+    transition:all .5s ease-in-out;
+    transform: scaleX(1);
+
+}
+.header ul li a:hover{
+    background-color: var(--spcial-color);
+    color: var(--light);
+    transform: scaleX(1.1);
+    letter-spacing: 1.10px;
+}
+
+.header ul li:last-child{
+    border-right: 0;
+} */
+
+
+/* header area end */
+
 /* hero section */
 #home{
     display: flex;
@@ -181,7 +254,7 @@ a,a:hover,a:active{
     text-transform: uppercase;
     color: var(--light);
     font-family: var(--title-font);
-    background-color: var(--spcial-color);
+    /* background-color: var(--spcial-color); */
     font-size: 9px;
     letter-spacing: 2px;
     padding: 10px 25px;
@@ -190,7 +263,8 @@ a,a:hover,a:active{
     position: relative;
     transition: all .2s;
     z-index: 1;
-    /* overflow: hidden; */
+    /* border: 1px solid blue; */
+    overflow: hidden;
 }
 .hire a:hover{
     background-color: #bb3d23;
@@ -200,13 +274,15 @@ a,a:hover,a:active{
     content: '';
     height: 100%;
     width: 100%;
-    background-color: var(--spcial-color);
+    /* background-color: var(--spcial-color); */
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
     border-radius: 25px;
     transition: all .5s;
+    border: 1px solid var(--spcial-color);;
+
 }
 
 .hire a:hover::after{
@@ -216,6 +292,10 @@ a,a:hover,a:active{
 
 .intro-skill h5{
     color: var(--light);
+}
+
+#typed-string h2{
+    text-transform: capitalize;
 }
 
 /* hero section end */

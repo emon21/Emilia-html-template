@@ -1,7 +1,10 @@
 
 
 (function($){
-    'user string';
+
+    
+
+    //typed js code
 var typed = new Typed("#typed",{
     stringsElement : '#typed-string',
     typeSpeed: 100,
@@ -11,6 +14,8 @@ var typed = new Typed("#typed",{
     loopCount: Infinity,
 });
 
+
+//home bacground img code
 
     $("#home").css('background-image','url(' + 'assets/img/bg.jpg' + ')')
 
