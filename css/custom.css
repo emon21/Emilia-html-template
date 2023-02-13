@@ -48,7 +48,7 @@ Version : 1.0
     --primary-bg:#fff;
     --secondary-bg:#f7f7f7;
     --primary-text-color:#212529;
-    --primary-text-color:#6C757D;
+    --secondary-text-color:#6C757D;
     --spcial-color:#E24727;
     --light:#ffffff;
 }
@@ -493,7 +493,7 @@ img{
 
 .protfolio{
     background-color: var(--light);
-    height: 100vh;
+  
 }
 
 .portfolio-filter button{
@@ -547,6 +547,107 @@ transition: .3s all ease;
 }
 
 .expand-img{}
+
+
+/* ==================== 5.Blog section ==================== */
+
+.blog{}
+
+.post-slider .post-review{
+    background-color: var(--primary-bg);
+    padding: 17px 17px 17px 5px;
+}
+
+.post-slider .post-comment{
+    float: left;
+    text-align: center;
+    padding: 7px 0 0 0;
+    line-height: 1;
+ }
+
+ .post-slider .post-comment li{
+    margin-left: 15px;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--secondary-text-color-text-color);
+    border-bottom: 1px solid var(--secondary-text-color);
+    margin-bottom: 10px;
+}
+.post-slider .post-comment li:last-child{
+   
+    border-bottom: 0px none;
+ }
+
+ .post-slider:hover .post-comment li strong{
+    color: var(--spcial-color);
+}
+
+.post-comment li small{
+    display: block;
+    margin-bottom: 10px;
+    font-style: 13px;
+}
+
+.post-slider .post-title{
+    padding: 0 0 0 70px;
+}
+
+.post-slider .post-title a{
+    font-size: 17px;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.post-slider .post-title a:hover{
+    color: var(--spcial-color);
+
+}
+
+.post-slider .post-description{
+    padding: 0 0 0 70px;
+    }
+
+
+.post-slider .post-comment li a,
+.post-slider:hover .post-comment li small{
+    color: var(--secondary-text-color);
+}
+
+.post-comment li i{
+    font-style: 19px;
+}
+.post-img{
+    position: relative;
+}
+
+.post-img .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .2s ease ;
+}
+
+.post-img:hover .overlay{
+    opacity: 1;
+ }
+
+.post-img .overlay i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--spcial-color);
+    font-size: 26px;
+}
+
 
 
 /* ==================== contact section ==================== */
