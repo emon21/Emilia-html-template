@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilia - Single Page Html Template</title>
     <!-- bootstarp css -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- FontAwesome css -->
-    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+    <!-- magnific-popup css -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="./css/custom.css">
 
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
     
     <!-- header section start -->
     <header class="header" id="header">
@@ -46,7 +48,7 @@
                             <a href="#blog" class="nav-link">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#conatct" class="nav-link">Contact</a>
+                            <a href="#contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -59,6 +61,7 @@
 
 
 <!-- hero section start -->
+
 <section id="home" class="home-area">
     <div class="container">
         <div class="home-content flex-column d-flex justify-content-center">
@@ -101,6 +104,180 @@
 
 <!-- hero section end -->
 
+<!-- about section start -->
+
+<section id="about" class="bg-light py-70
+">
+<div class="container">
+    <div class="row align-item-center">
+        <div class="col-lg-6">
+            <div class="about-content my-4"> 
+                <div class="section-title text-center text-lg-start mb-5">
+                    <h2>About Me</h2>
+                    <p class="text-muted">All you need to know about me</p>
+                </div>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic saepe ex deserunt ut! Expedita laborum similique, saepe dolore, nulla voluptas nesciunt aliquid velit nobis obcaecati libero iusto porro dicta illo.</p>
+               <div class="about-contacts">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><i class="fas fa-map-marker-alt"></i> Location : New Yeark, usa</p>
+                        <p><i class="fas fa-phone-square"></i> Phone : 871-345-7789</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><i class="fas fa-calendar-alt"></i>
+                            age : 30</p>
+                        <p><i class="fas fa-envelope"></i> Mail : info@gmail.com</p>
+                    </div>
+                </div>
+               </div> 
+               <div class="social-link mt-5">
+                Find Me :
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+            </div>
+        </div>
+
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-5">
+            <div class="about-image text-center">
+                <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+
+    </div>
+   
+</div>
+</section>
+
+<!-- about section end -->
+
+<!-- protfolio section start -->
+<section id="protfolio" class="protfolio py-70 bg_primary">
+
+    <div class="container">
+        <div class="section-title text-center text-lg-start mb-5">
+            <h2>Protfolio Me</h2>
+            <p class="text-muted">Here is some on my works</p>
+        </div>
+
+        <div class="portfolio-filter text-lg-start text-center mb-5 ">
+            <button class="active" data-filter="*">All</button>
+            <button  data-filter=".design">Design</button>
+            <button  data-filter=".dev">Development</button>
+            <button  data-filter=".ux">Ui/UX</button>
+           
+        </div>
+
+        <div class="portfolio-wrapper row pb-5">
+
+            <div class="portfolio-grid col-md-4 col-sm-6 design">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img1.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img1.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 dev">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img2.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img2.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 design">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img3.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img3.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 dev">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img4.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img4.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 design">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img5.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img5.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 dev">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img6.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img6.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 design">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img7.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img7.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 ux">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img8.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img8.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+            <div class="portfolio-grid col-md-4 col-sm-6 ux">
+                <div class="portfolio-item">
+                    <a href="assets/img/portfolio/img9.jpg" class="expand-img">
+                        <img src="assets/img/portfolio/img9.jpg"  alt="">
+                    </a>
+                   
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+protfolio
+</section>
+<!-- protfolio section end -->
+
+<!-- blog section start -->
+<section id="blog">
+blog
+</section>
+<!-- blog section end -->
+
+<!-- contact section start -->
+<section id="contact">
+contact
+</section>
+<!-- contact section end -->
+
+
+
+
 
     <!-- Jquery JS -->
     <script src="./js/jquery-3.6.3.min.js"></script>
@@ -110,6 +287,12 @@
 
     <!-- typed JS -->
     <script src="./js/typed.min.js"></script>
+
+    <!-- isotope JS -->
+    <script src="./js/isotope.pkgd.min.js"></script>
+
+    <!-- magnific-popup JS -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
 
     <!-- custom JS -->
     <script src="./js/script.js"></script>
