@@ -6,34 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilia - Single Page Html Template</title>
     <!-- bootstarp css -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- FontAwesome css -->
-    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <!-- magnific-popup css -->
-    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="200">
-    
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+   
+    <!-- preloader Start-->
+
+    <div id="preloader">
+        <div class="spinner-grow text-dark"></div>
+    </div>  
+
+   <!-- preloader End -->
+   
+   
     <!-- header section start -->
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-lg bg-light fixed-top bg-light">
+        
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-light">
+            <a href="index.html" class="navbar-brand">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+
+              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarToggler">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="./assets/img/logo.png" alt="">
-                    </a>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="#home" class="nav-link">Home</a>
@@ -52,6 +70,29 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- <div class="collapse navbar-collapse" id="navbarToggler">
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+
             </div>
         </nav>
 
@@ -112,11 +153,12 @@
     <div class="row align-item-center">
         <div class="col-lg-6">
             <div class="about-content my-4"> 
+                
                 <div class="section-title text-center text-lg-start mb-5">
-                    <h2>About Me</h2>
+                    <h2>About Me</h2> <br>
                     <p class="text-muted">All you need to know about me</p>
                 </div>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic saepe ex deserunt ut! Expedita laborum similique, saepe dolore, nulla voluptas nesciunt aliquid velit nobis obcaecati libero iusto porro dicta illo.</p>
+               <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic saepe ex deserunt ut! Expedita laborum similique, saepe dolore, nulla voluptas nesciunt aliquid velit nobis obcaecati libero iusto porro dicta illo.</p>
                <div class="about-contacts">
                 <div class="row">
                     <div class="col-md-6">
@@ -130,7 +172,7 @@
                     </div>
                 </div>
                </div> 
-               <div class="social-link mt-5">
+               <div class="social-link mt-3 mb-2">
                 Find Me :
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
@@ -160,7 +202,7 @@
 
     <div class="container">
         <div class="section-title text-center text-lg-start mb-5">
-            <h2>Protfolio Me</h2>
+            <h2>Protfolio Me</h2> <br/>
             <p class="text-muted">Here is some on my works</p>
         </div>
 
@@ -265,12 +307,12 @@
 <section id="blog" class="blog py-70 bg_secondary">
 <div class="container">
     <div class="section-title text-center text-lg-start mb-5">
-        <h2>Blog</h2>
+        <h2>Blog</h2> <br/>
         <p class="text-muted">Here is some on my blog</p>
     </div>
     <div class="row">
        <!-- post item -->
-        <div class="post-slider col-md-4">
+        <div class="post-slider col-md-4 mb-3">
             <div class="post-img">
                 <img src="./assets/img/blog/blog1.jpg" alt="">
                 <a href="#" class="overlay"><i class="fas fa-search"></i></a>
@@ -291,7 +333,7 @@
         </div>
        <!-- post item end-->
        <!-- post item -->
-        <div class="post-slider col-md-4">
+        <div class="post-slider col-md-4 mb-3">
             <div class="post-img">
                 <img src="./assets/img/blog/blog2.jpg" alt="">
                 <a href="#" class="overlay"><i class="fas fa-search"></i></a>
@@ -312,7 +354,7 @@
         </div>
        <!-- post item end-->
        <!-- post item -->
-        <div class="post-slider col-md-4">
+        <div class="post-slider col-md-4 mb-3">
             <div class="post-img">
                 <img src="./assets/img/blog/blog3.jpg" alt="">
                 <a href="#" class="overlay"><i class="fas fa-search"></i></a>
@@ -337,32 +379,122 @@
 <!-- blog section end -->
 
 <!-- contact section start -->
-<section id="contact">
-contact
+<section id="contact" class="contact bg-light py-70">
+<div class="container">
+    <div class="section-title text-center text-lg-start mb-5">
+        <h2>Contact Me</h2>  <br/>
+        <p class="text-muted">I can Help youwith your project.Get in touch.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="text-start">
+                <div class="contacts">
+                    <div class="about-contacts py-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><i class="fas fa-map-marker-alt"></i> Location : New Yeark, usa</p>
+                                <p><i class="fas fa-phone-square"></i> Phone : 871-345-7789</p>
+                                <p><i class="fas fa-calendar-alt"></i>
+                                    age : 30</p>
+                                <p><i class="fas fa-envelope"></i> Mail : info@gmail.com</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <!-- social link start -->
+                       <div class="social-link mt-2 mb-3">
+                        Find Me :
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                       </div>
+                       <!-- social link end -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="contact-form">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" placeholder="Enter Your Name*" id="name" required="" >
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mt-2">
+                                <input type="email" class="form-control" placeholder="Enter Your Email*" id="email" required="" >
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group mt-2">
+                                <input type="email" class="form-control" placeholder="Your Subject..." id="subject" required="" >
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mt-2">
+                                <textarea name="" class="form-control" id=""  rows="4" placeholder="Enter Your Message..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button class="btn-submit" name="submit">Send Message <i class="fas fa-long-arrow-alt-right "></i></button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 <!-- contact section end -->
 
+<!-- footer section start -->
+<footer id="footer" class="footer py-70 bg-secondary pt-5 pb-1
+">
+<div class="container">
+    <div class="footer-text text-center">
+        <h6>So How Can I make you Shine?</h6>
+        <div class="hire mt-3">
+            <a href="#" class="btn-hire">Hire Me <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+    </div>
+</div>
+<div class="go-top">
+    <a href="#top" class="top">
+        <i class="fa fa-angle-right"></i>
+        <span>Back to top</span>
+    </a>
+</div>
+<div class="footer-bottom text-center py-3">
+@all Right reserved <a href="#">Smart BD Soft </a> | 2023
 
+</div>
+</footer>
+<!-- footer section end -->
 
 
 
     <!-- Jquery JS -->
-    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
 
     <!-- bootstarp JS -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- typed JS -->
-    <script src="./js/typed.min.js"></script>
+    <script src="js/typed.min.js"></script>
 
     <!-- isotope JS -->
-    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
 
     <!-- magnific-popup JS -->
-    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
 
     <!-- custom JS -->
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

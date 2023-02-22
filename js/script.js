@@ -7,6 +7,7 @@
 3.Bckground image
 4.isotope js
 5.magnific-popup JS
+6.Smooth Scroll JS
 
 /*============================ */ 
 
@@ -15,6 +16,13 @@
 (function($){
     "use strict"
 
+setTimeout(function(){
+    $('#preloader').addClass('preloaded');
+},800);
+
+setTimeout(function(){
+    $('#preloader').remove();
+},2000);
     /**
      * 
      * 1.Typed js 
@@ -31,18 +39,14 @@
     /**
      * 
      * 2.Navbar js 
-    */ 
-    $(window).bind('scroll',function() {
+    */
 
+    $(window).bind('scroll',function() {
         if ($(this).scrollTop() > 150) {
             $('.navbar').addClass('fixed');
-        }
-
-        else{
+        }else{
             $('.navbar').remove('fixed');
-
-        }
-        
+        }   
     });
 
 
@@ -53,6 +57,7 @@
     $("#home").css('background-image','url(' + 'assets/img/bg.jpg' + ')');
 
     /*
+    
     4.isotope JS
     
     */ 
@@ -92,6 +97,35 @@
             enabled: true
           },
       });
+
+
+      /**
+     * 
+     * 6.Smooth Scroll JS
+    */
+
+      // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 
     
 
